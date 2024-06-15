@@ -223,6 +223,10 @@ footer {
     align-items: center;
   }
 
+  .home__description--button{
+    max-width: 240px;
+  }
+
   h1 {
     text-align: center;
     font-size: 60px;
