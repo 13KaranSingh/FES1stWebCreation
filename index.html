@@ -4,91 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section>
       <nav>
-        <img src="./assets/FES.svg" alt="" />
+        <img src="./assets/FES.svg" class="logo" alt="" />
         <ul>
           <li><a href="#about">About</a></li>
-          <li><a href="#ciscord">Discord</a></li>
+          <li><a href="#discord">Discord</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <header>
-        <div>
-          <h1>Best place to learn frontend</h1>
-          <p>
-            Go from being an absolute beginner to a pro with a simplified
-            process
-          </p>
-          <button>Start now</button>
+        <div class="row">
+          <div class="home_description">
+            <h1>Best place to learn frontend</h1>
+            <p class="sub-header">
+              Go from being an absolute beginner to a pro with a simplified
+              process
+            </p>
+            <button>Start now</button>
+          </div>
+          <figure class="home_img--wrapper">
+            <img
+              class="home_img"
+              src="./assets/laptop.png"
+              alt="Home page image"
+            />
+          </figure>
         </div>
-        <figure>
-          <img src="./assets/laptop.png" alt="Home page image" />
-        </figure>
       </header>
     </section>
 
     <main>
-      <section id="#about">
+      <section id="about">
         <h2>About</h2>
-        <div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-            fugiat deserunt reiciendis labore sit ipsum praesentium pariatur
-            adipisci quas facere quaerat, ea, consectetur nostrum aspernatur
-            sapiente dolore laboriosam accusamus! Ipsa!
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-            fugiat deserunt reiciendis labore sit ipsum praesentium pariatur
-            adipisci quas facere quaerat, ea, consectetur nostrum aspernatur
-            sapiente dolore laboriosam accusamus! Ipsa!
-          </p>
+        <div class="section__description">
+          <div class="section__description--wrapper">
+            <p class="section__description--par">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+              fugiat deserunt reiciendis labore sit ipsum praesentium pariatur
+              adipisci quas facere quaerat, ea, consectetur nostrum aspernatur
+              sapiente dolore laboriosam accusamus! Ipsa!
+            </p>
+            <p class="section__description--par">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+              fugiat deserunt reiciendis labore sit ipsum praesentium pariatur
+              adipisci quas facere quaerat, ea, consectetur nostrum aspernatur
+              sapiente dolore laboriosam accusamus! Ipsa!
+            </p>
+          </div>
         </div>
-        <figure>
+        <figure class="about__img--wrapper">
           <img src="./assets/about.jpg" alt="" />
         </figure>
       </section>
 
-      <section id="#discord">
+      <section id="discord">
         <h2>Discord</h2>
-        <figure>
-          <img src="./assets/discord.png" alt="" />
-        </figure>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            nulla pariatur ea dolorem delectus nisi harum placeat provident,
-            dolor possimus aliquam reprehenderit repudiandae sunt necessitatibus
-            animi enim atque veritatis eaque!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            nulla pariatur ea dolorem delectus nisi harum placeat provident,
-            dolor possimus aliquam reprehenderit repudiandae sunt necessitatibus
-            animi enim atque veritatis eaque!
-          </p>
+        <div class="section__description">
+          <figure class="about__img--wrapper">
+            <img src="./assets/discord.png" alt="" />
+          </figure>
+          <div class="section__description--wrapper">
+            <p class="section__description--par">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates nulla pariatur ea dolorem delectus nisi harum placeat
+              provident, dolor possimus aliquam reprehenderit repudiandae sunt
+              necessitatibus animi enim atque veritatis eaque!
+            </p>
+            <p class="section__description--par">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates nulla pariatur ea dolorem delectus nisi harum placeat
+              provident, dolor possimus aliquam reprehenderit repudiandae sunt
+              necessitatibus animi enim atque veritatis eaque!
+            </p>
+          </div>
         </div>
       </section>
-      <section id="#contact">
+      <section id="contact">
         <h2>Contact</h2>
         <form action="">
-            <span>Email</span>
+          <span>Email</span>
           <input type="text" placeholder="jane@example.com" />
           <span>Message</span>
-          <textarea type="text" placeholder="jane@example.com"></textarea>
+          <textarea
+            type="text"
+            placeholder="Nice website, lets connect!"
+          ></textarea>
         </form>
       </section>
     </main>
-    
+
     <footer>
-      <img src="./assets/FES.svg" alt="" />
-      <div>
-        <a href="#about/"></a>
-        <a href="#discrod/"></a>
-        <a href="#contact/"></a>
+      <img class="footer__logo" src="./assets/FES.svg" alt="" />
+      <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact</a>
       </div>
       <p>Copyright FES</p>
     </footer>
